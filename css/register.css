@@ -1,0 +1,153 @@
+div.big_bg{
+  width:100%;
+  height:800px;
+  background:linear-gradient(to bottom right,rgb(250,133,153),rgb(249,87,116));
+  position:fixed;
+}
+div.big_bg ul{
+ width:100%;
+ height:100%;
+ display:flex;
+ position:absolute;
+ top:0;
+ left:0;
+ z-index:-5;
+}
+div.big_bg ul li{
+  background-color:rgba(255, 255, 255, 0.15);
+  position:absolute;
+  display:block;
+  bottom:-100px;
+  width:50px;
+  height:50px;
+  animation:square 10s linear infinite;
+}
+div.big_bg ul li:nth-child(1){
+  left:0%;
+  animation-duration:15s;
+}
+div.big_bg ul li:nth-child(2){
+  width:90px;
+  height:90px;
+  left:10%;
+  animation-delay:2s;
+  animation-timing-function:ease-out;
+}
+div.big_bg ul li:nth-child(3){
+  width:70px;
+  height:70px;
+  left:20%;
+  animation-delay:3s;
+}
+div.big_bg ul li:nth-child(4){
+  width:78px;
+  height:78px;
+  left:35%;
+  animation-timing-function:ease-out;
+  animation-duration:8s;
+}
+div.big_bg ul li:nth-child(5){
+  width:60px;
+  height:60px;
+  left:40%;
+  animation-duration:15s;
+}
+div.big_bg ul li:nth-child(6){
+	width: 80px;
+	height: 80px;
+	left: 55%;
+}
+div.big_bg ul li:nth-child(7){
+    left: 68%;
+	width:100px;
+	height:100px;
+    animation-timing-function:ease-in-out;
+	  animation-delay:1s;
+}
+div.big_bg ul li:nth-child(8){
+   left:75%;
+   width:90px;
+   height:90px;
+}
+div.big_bg ul li:nth-child(9){
+   left:88%;
+  animation-timing-function:ease-out;
+}
+div.big_bg ul li:nth-child(10){
+   left:95%;
+   width:120px;
+   height:120px;
+}
+@keyframes square{
+   0%{
+     transform:rotate(0deg) translateY(0)
+   }
+   100%{
+      transform:rotate(120deg);
+     bottom:500px;
+      transform:translateY(-500);
+   }
+}
+div.big_bg div.sheet{
+  position:absolute;
+  width:1000px;
+  top:150px;
+  left:50%;
+  margin-left:-400px;
+}
+div.big_bg div.sheet h1{
+  margin:30px 200px;
+  font:bold 45px "华文行楷";
+}
+div.big_bg div.sheet table tr td:first-child{
+  text-align:right;
+  font:24px "华文行楷";
+}
+div.big_bg div.sheet table tr td{
+  width:300px;
+  height:40px;
+  line-height:50px;
+}
+div.big_bg div.sheet table tr:nth-child(4) td{
+  text-align:left;
+  padding-left:50px;
+  font:24px "华文行楷";
+}
+div.big_bg div.sheet table tr:nth-child(7) td{
+  text-align:center;
+}
+input[type=text],input[type=password]{
+  width:250px;
+  height:38px;
+  outline:none;
+  border-radius:5px;
+  padding-left:10px;
+}
+input[type=text]:focus,input[type=password]:focus{
+  border:1px solid #0aa1ed;
+}
+select{
+ width:100px;
+ height:35px;
+ border-radius:5px;
+  font:20px "楷体";
+}
+select option{
+  font:20px "楷体";
+}
+div.big_bg div.sheet table tr td button{
+  width:150px;
+  height:35px;
+  line-height:35px;
+  text-align:center;
+  font:20px "楷体";
+  background:rgb(250,90,116);
+  color:white;
+  border:none;
+}
+div.big_bg div.sheet table tr td button:hover{
+  background: red;
+}
+div.big_bg div.sheet table tr td span{
+ color:red;
+}

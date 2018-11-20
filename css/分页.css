@@ -1,0 +1,77 @@
+div.page{
+  border-top:2px solid rgb(245,75,101);
+}
+
+div.detail ul.detail_1{
+  margin:0 auto;
+  width:1500px;
+  display:flex;
+  justify-content:space-around;
+  border-bottom:1px solid rgb(245,75,101);
+}
+div.detail ul.detail_1 li~li{
+  margin-top:60px;
+  width:20%;
+}
+div.detail ul.detail_1 li img{
+   width:200px;
+   height:200px;
+}
+div.detail ul li p{
+  padding-bottom:20px;
+  font-size:20px;
+}
+div.detail ul li p a:hover{
+  color:red;
+}
+div.detail ul li div.sub_style{
+   font-size:14px;
+}
+div.detail ul li.price{
+  font-size:22px;
+}
+ul.detail_1 li div.button a{
+  color:black;
+}
+ul.detail_1 li div.button{
+  width:100px;
+  height:45px;
+  line-height:50px;
+  background:rgba(235,0,0,.3);
+  margin:10px 0;
+  text-align:center;
+  border-radius:10px;
+}
+ul.detail_1 li div.button:hover a{
+  color:white;
+}
+ul.detail_1 li div.button:hover{
+  background:rgba(235,0,0,.5);
+}
+div.paging{
+  width:80%;
+  margin:10px auto;
+  height:30px;
+  line-height:30px;
+  display:flex;
+  flex-direction:row-reverse;
+  flex-wrap:nowrap;
+}
+div.paging div{
+   width:260px;
+}
+div.paging div a{
+  color:red;
+  border:1px solid red;
+  padding:5px;
+  margin:0 2px;
+  border-radius:5px;
+}
+div.paging div a.disable{
+   border:1px solid rgb(200,200,200);
+   color:rgb(190,190,190);
+}
+div.paging div a.active{
+  color:white;
+  background:rgba(235,0,0,.5);
+}

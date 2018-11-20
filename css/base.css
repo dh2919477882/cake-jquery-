@@ -1,0 +1,30 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  list-style:none;
+  text-decoration:none;
+}
+#header{
+  width:100%;
+  height:125px;
+}
+#footer{
+ width:100%;
+ height:360px;
+}
+.text::before{
+  content:"";
+  display:table; 
+}
+.nav{
+  width:1000px;
+  margin:15px 200px;
+}
+.nav a{
+  color:black;
+  font-size:18px;
+}
+.nav a:hover{
+  color:red;
+}

@@ -1,0 +1,136 @@
+div.details{
+  border-top:2px solid red;
+}
+div.area{
+ display:flex;
+ justify-content:space-around;
+ width:1600px;
+ border-top:1px solid red;
+ margin:0 auto;
+}
+div.details div.area div.area_1{
+  width:600px;
+}
+div.area div.glass{
+  position:relative;
+  width:600px;
+}
+div.area div.glass div.super-m{
+  position:absolute;
+  width:400px;
+  height:400px;
+  top:0;
+  left:100px;
+}
+div.area div.glass div.mask{
+  width:200px;
+  height:200px;
+  position:absolute;
+  top:0;
+  left:100px;
+  background: rgb(255,208,208);
+  opacity:.5;
+}
+div.area div.glass div.Imglg{
+  width:400px;
+  height:400px;
+  position:absolute;
+  top:0;
+  left:600px;
+  background-size:800px 800px;
+}
+.d-block{
+  display:block
+}
+.d-none{
+  display:none;
+}
+div.rahmen{
+  margin:0 auto;
+  width:400px;
+  height:400px;
+}
+div.rahmen img{
+width:400px;
+height:400px;
+}
+div ul.rahmen_1{
+  display:flex;
+  justify-content:space-around;
+}
+div ul.rahmen_1 li img{
+  width:100px;
+  height:100px;
+}
+div.area_1 p{
+  padding:20px 0;
+  font-size:30px;
+  border-bottom:1px solid red;
+}
+div.area_1 h1{
+  margin:20px 0;
+}
+div.area_2 a{
+  border:1px solid black;
+  color:black;
+  display:inline-block;
+  padding:10px;
+  border-radius:5px;
+  font-weight:600;
+  margin-bottom:20px;
+  cursor:pointer;
+}
+div.area_2 a.active{
+  border:0;
+  background:rgba(235,0,0,.4);
+  color:white;
+}
+table.area_3 tr td{
+  padding:10px;
+  font-size:20px;
+}
+div.area_4{
+ display:flex;
+ margin:10px 0;
+}
+div.area_4 a,div.area_4 span{
+  font-size:35px;
+}
+div.area_4 a{
+  font-weight:bold;
+  padding:0 5px;
+  background:rgba(235,0,0,.4);
+  color:white;
+  cursor:pointer;
+}
+div.area_4 span{
+  width:60px;
+  text-align:center;
+  border:1px solid rgba(235,0,0,.4);
+  color:black;
+}
+div.area_5 a{
+  display:inline-block;
+  width:150px;
+  height:40px;
+  text-align:center;
+  line-height:40px;
+  background:rgba(235,0,0,.4);
+  color:white;
+  border-radius:5px;
+  font-size:20px;
+  font-weight:bold;
+  margin:20px 30px 0 0;
+}
+div.area_5 a:hover{
+  background:rgba(235,0,0,.6);
+}
+div.detail_1 p{
+  font-size:20px;
+  padding:10px 0;
+}
+div.detail_1 p:nth-child(1){
+  margin-top:100px;
+  font-weight:bold;
+  font-size:30px;
+}

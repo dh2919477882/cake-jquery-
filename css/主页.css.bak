@@ -1,0 +1,393 @@
+/*广告图弹出*/
+    div.container{
+	  position:absolute;
+	  width:612px;
+	  height:408px;
+	  top:50%;
+	  left:50%;
+	  margin-top:-204px;
+	  margin-left:-306px;
+      z-index:100;
+	  display:none;
+	}
+	div.container p{
+	  font:56px "华文行楷";
+	  position:absolute;
+	  top:30px;
+	  left:80px;
+	  width:150px;
+	  height:200px;
+	  color:lightblue;
+	}
+	div.container span{
+	  position:absolute;
+	  top:5px;
+	  right:10px;
+	  font-size:20px;
+	  color:#a1a1a1;
+	  cursor:pointer;
+	}
+/*楼层滚动*/
+ #scroll{
+    position:fixed;
+	top:500px;
+	left:10px;
+	z-index:100;
+	display:none;
+ }
+ div.scr{
+      width:40px;
+	  height:45px;
+	  font-size:24px;
+	  background: rgba(235,0,0,.5);
+	  color:white;
+	  text-align:center;
+	  line-height:45px;
+	  margin-bottom:5px;
+	  border-radius:20px;
+	  overflow:hidden;
+	  transition:width .5s linear;
+	  cursor:pointer;
+}
+div.scr:hover{
+   width:120px;
+   background:red;
+}
+   .light{
+     width:120px !important;
+     background:red !important;
+   }
+ /*头部第二部分*/
+ .main2 div a{
+   text-decoration:none;
+   font-size:16px;
+   color:white;
+   display:inline-block;
+   width:100px;
+ }
+ .main2{
+   display:flex;
+   background:rgb(245,75,101) ;
+ }
+ .main2 div{
+   padding:15px 50px;
+   height:50px;
+   width:175px;
+ }
+ #main2_d1{
+   margin-left:250px;
+ }
+ #list{
+   position:relative;
+ }
+ #list-child{
+   background:rgba(235,0,0,.3) ;
+   position:absolute;
+   width:200px;
+   height:230px;
+   top:52px;
+   left:15px;
+   color:white;
+   display:none;
+ }
+ #list-child a{
+ width:200px;
+  display:block;
+   padding:13px 20px;
+ }
+#list:hover #list-child{
+   display:block;
+   z-index:10;
+   cursor:pointer;
+ }
+/*第一部分--轮播图*/
+div.main3{
+  position:relative;
+}
+div.lunbo{
+    width:1200px;
+    height:650px;
+	margin:0 auto;
+	position:relative;
+} 
+.lunbo img{
+  position:absolute;
+  width:1200px;
+  height:650px;
+  top:0;
+  left:0;
+   transition:all 1s linear;
+   opacity:0
+}
+.lunbo .active{
+  opacity:1;
+}
+.anniu{
+  display:flex;
+  position:absolute;
+  bottom:50px;
+  left:45%;
+  z-index:10;
+}
+.anniu a{
+  margin:10px;
+  border-radius:50%;
+  border:5px solid white;
+}
+.anniu a.show{
+  border:5px solid red;
+}
+.nav1,.nav2{
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  border:2px solid rgba(245,75,101,.5);
+  position:absolute;
+  top:350px;
+}
+.nav1 a,.nav2 a{
+  text-decoration:none;
+  font-size:50px;
+  font-weight:bold;
+  color:rgba(245,75,101,.5);
+  padding-left:11px;
+}
+.nav1{
+  left:150px;
+}
+.nav2{
+  right:150px; 
+}
+.nav1:hover,.nav2:hover{
+  border:2px solid rgb(245,75,101);
+}
+.nav1:hover a,.nav2:hover a{
+  color:rgb(245,75,101);
+}
+/*楼层导航*/
+
+/*第一层导航：最新动态*/
+div.product1{
+  width:1300px;
+  margin:0 auto;
+  border-bottom:2px solid red;
+}
+div.product1 a{
+  display:block;
+  width:200px;
+  margin-top:50px;
+  padding:10px 50px;
+  text-decoration:none;
+  font-size:20px; 
+  background:rgb(245,75,101);
+  border-radius:10px;
+  color:white;
+  transition:all 1s linear;
+}
+.nav3-1-1{
+  display:flex;
+  justify-content:space-around;
+  width:1250px;
+  margin:10px auto;
+}
+.banner ul,li{
+	 padding:0;
+	 margin:0;
+ }
+.banner ul li{
+     float:left;
+	 width:135px;
+	 height:230px;
+	 overflow:hidden;
+}
+.banner ul{
+   	 position:absolute;
+   	 z-index:10;   
+}
+.banner ul li span{
+     display:inline-block;
+     width:135px;
+	 height:230px;
+}
+.banner{
+     width:270px;
+	 height:230px;
+	 position:relative;
+	 overflow:hidden;
+}
+.banner_bg{
+	   transform:scale(1.2);
+	   width:270px;
+	   height:230px;
+	   position:absolute;
+	   top:0;
+       left:0;
+	   transition:all 1.5s linear;
+	   z-index:1;
+}
+span.img1{
+   background: url("../img/product/3-1.jpg") no-repeat;
+   background-size:270px 230px ;
+}
+span.img2{
+   background: url("../img/product/3-4.jpg") no-repeat;
+}
+span.img3{
+   background: url("../img/product/3-6.jpg") no-repeat;
+}
+span.img4{
+   background: url("../img/product/3-8.jpg") no-repeat;
+}
+.banner:hover .banner_bg{
+	   transform:scale(1);
+}
+.banner ul li:nth-child(1) span.banner1-1{
+     background: url("../img/product/3-2.jpg") no-repeat left;
+	 background-size:270px 230px ;
+  }
+.banner ul li:nth-child(2) span.banner1-2{
+     background: url("../img/product/3-2.jpg") no-repeat right;
+	background-size:270px 230px ;
+  }
+.banner ul li:nth-child(1) span.banner2-1{
+     background: url("../img/product/3-3.jpg") no-repeat left;
+  }
+.banner ul li:nth-child(2) span.banner2-2{
+     background: url("../img/product/3-3.jpg") no-repeat right;
+  }
+.banner ul li:nth-child(1) span.banner3-1{
+     background: url("../img/product/3-5.jpg") no-repeat left;
+  }
+.banner ul li:nth-child(2) span.banner3-2{
+     background: url("../img/product/3-5.jpg") no-repeat right;
+  }
+.banner ul li:nth-child(1) span.banner4-1{
+     background: url("../img/product/3-7.jpg") no-repeat left;
+  } 
+.banner ul li:nth-child(2) span.banner4-2{
+     background: url("../img/product/3-7.jpg") no-repeat right;
+} 
+.banner ul li:nth-child(1) span{
+	 transition:all 1.5s linear;
+}
+.banner ul li:nth-child(2) span{
+	  transition:all 1.5s linear;
+}
+.banner:hover ul li:nth-child(1) span{
+     transform:translate(0,230px);
+}
+.banner:hover ul li:nth-child(2) span{
+     transform:translate(0,-230px);
+}
+
+/*楼层2*/
+   ul.cake li{
+	 width:270px;
+	 height:230px;
+	 position:relative;
+	 text-align:center;
+   }
+   ul.cake li img{
+     margin:0 auto;
+   }
+   ul.cake li div.shadow{
+     width:100%;
+	 height:100%;
+     position:absolute;
+	 background:red;
+	 opacity:0;
+	 top:0;
+	 left:0;
+	 transition:opacity 1s linear;
+   }
+   ul.cake li div p.line{
+      border:0px solid rgb(252,157,154);
+	  position:absolute;
+	   transition:all 1s linear;
+   }
+   ul.cake li div p.p-left{  
+      height:0;
+      top:30px;
+	  left:50px;
+   }
+   ul.cake li div p.p-top{
+      width:0%;
+	  top:60px;
+	  left:50px;
+   }
+   ul.cake li div p.p-right{    
+      height:0%;
+	  top:60px;
+	  right:50px;
+   }
+   ul.cake li div p.p-bottom{
+      width:0%;
+      top:135px;
+	  right:50px;
+   }
+   div.draw h1{
+     position:absolute;
+	 top:75px;
+	 left:70px;
+	 font-family:"楷体";
+     color:rgb(254,67,101);
+	 display:none;
+   }
+   li.cake_bg:hover div.shadow{
+     opacity:.1;
+   }
+   div.draw:hover h1{
+     display:block;
+   }
+   div.draw{
+     position:absolute;
+	 width:270px;
+	 height:230px;
+	 top:0;
+	 left:0;
+   }
+   div.draw:hover p.p-left,div.draw:hover p.p-right{
+     border-width:1px;
+     height:45%;
+   }
+   div.draw:hover p.p-top,div.draw:hover p.p-bottom{
+     border-width:1px;
+     width:70%;
+   }
+/*楼层3*/
+    ul.nav3-3 li{
+	  position:relative;
+	  width:200px;
+	  height:200px;
+	}
+    img.img_pro:hover{
+     transform:translate(10px,10px);	
+	}
+	.shadow1,img.img_pro{
+	 width:200px;
+	 height:200px;
+	 position:absolute;
+	 top:0;
+	 left:0;
+	 transition:all 1s linear;
+	 }
+    div.shadow1{
+     background: rgba(235,0,0,.3);
+	 }
+	 div.foot_font{
+	  width:150px;
+	  height:40px;
+	  background: rgba(235,0,0,.3);
+	   position:absolute;
+	   top:150px;
+	   left:30px;
+	   font:20px "宋体";
+	   text-align:center;
+	   line-height:40px;
+	   color:white;
+	   border-radius:3px;
+	   display:none;
+	 }
+    ul.nav3-3 li:hover .foot_font{
+	  display:block;
+	}
