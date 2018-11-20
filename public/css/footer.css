@@ -1,0 +1,44 @@
+/*底部样式*/
+div.main5{
+  background:rgb(245,75,101) ;
+}
+
+div.main5-1{
+  margin:30px auto 10px;
+  width:1200px;
+  display:flex;
+  justify-content:space-around;
+}
+div.main5-1>div{
+  width:30%;
+  height:200px;
+}
+div.main5_pro{
+  display:flex;
+}
+div.main5_pro ul.li_two{
+  margin-left:20%;
+}
+p.style{
+  font-weight:bold;
+  padding:5px 0;
+  border-bottom:1px solid black;
+  margin-bottom:5px;
+}
+div.main5-1 ul li{
+  padding:5px 0;
+}
+div.main5-1 ul li a{
+  cursor:pointer;
+}
+#footer_img{
+  width:40%;
+  height:50px;
+}
+div.main5-1-top{
+  padding-top:20px;
+  border-top:1px solid black;
+}
+div#bottom_div{
+  height:60px;
+}

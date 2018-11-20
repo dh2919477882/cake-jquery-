@@ -1,0 +1,113 @@
+div.bg{
+  width:1900px;
+  height:1000px;
+  margin:0 auto;
+  background:url("../img/register/8.jpg") no-repeat;
+  background-size:cover;
+  position:relative;
+}
+div.bg_border{
+  background:rgba(255,255,255,.5);
+  width:600px;
+  height:600px;
+  position:absolute;
+  top:150px;
+  right:250px;
+}
+div.login{
+  width:80%;
+  border-bottom:1px solid rgba(255,255,255,.6);
+  margin:0 auto;
+}
+div.login h1{
+  margin:50px 50px 30px;
+  font:bold 45px "华文行楷";
+}
+div.bg_border div.push{
+  margin:20px 100px;
+}
+div.bg_border div.push span{
+  font:24px "华文行楷";
+}
+div.bg_border div.push span.sign{
+  color:red;
+}
+div.bg_border div.push span+input{
+  width:200px;
+  height:35px;
+  border:1px solid rgba(235,0,0,.2);
+  border-radius:5px;
+  outline:none;
+  padding-left:5px;
+}
+div.bg_border div.push p{
+  height:30px;
+  line-height:30px;
+  margin-left:125px;
+  font-family:"华文行楷";
+}
+div.bg_border div.push a.forget{
+  font:20px "楷体";
+  color:rgba(235,0,0,.5);
+  text-decoration:underline;
+  margin-left:50%;
+}
+div.bg_border div.push button{
+  width:300px;
+  height:40px;
+  margin:5px 10%;
+  background:rgba(235,0,0,.3);
+  text-align:center;
+   outline:none;
+}
+div.bg_border div.push button a{
+  color:white;
+   font:20px "楷体";
+}
+div.bg_border div.push button:hover{
+   background:rgba(235,0,0,.5); 
+}
+div.bg_border div.logo_method{
+  width:80%;
+  margin:0 auto;
+  border-top:1px solid rgba(255,255,255,.6);
+}
+div.bg_border div.logo_method p{
+  margin-top:10px;
+  font:20px "楷体";
+}
+div.bg_border div.logo_method div.method{
+  display:flex;
+  justify-content:space-around;
+  margin-top:20px;
+}
+div.bg_border div.logo_method div.method a{
+  width:120px;
+  height:30px;
+  background:rgba(255,255,255,.8);
+  text-align:center;
+  line-height:30px;
+}
+div.bg_border div.logo_method div.method a:nth-child(1){
+  border:1px solid #0aa1ed;
+  color:#0aa1ed;
+}
+div.bg_border div.logo_method div.method a:nth-child(2){
+  border:1px solid rgba(235,0,0,.5);
+  color:rgba(235,0,0,.5);
+}
+div.bg_border div.logo_method div.method a:nth-child(3){
+  border:1px solid #00cc33;
+  color:#00cc33;
+}
+div.bg_border div.logo_method div.reg{
+  position:relative;
+}
+div.bg_border div.logo_method div.reg div{
+ position:absolute;
+ top:50px;
+ right:60px;
+}
+div.bg_border div.logo_method div.reg div a:hover{
+  color:rgba(235,0,0,.5);
+}
